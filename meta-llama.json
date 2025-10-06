@@ -1,0 +1,68 @@
+{
+  "model": "llama3:8b",
+  "n": 500,
+  "seed": 42,
+  "metrics": {
+    "n_prompts": 500,
+    "baseline_executions": 138,
+    "server_sanitized_executions": 0,
+    "client_sanitized_executions": 0,
+    "execution_success_rate_baseline": 0.276,
+    "execution_success_rate_server": 0.0,
+    "execution_success_rate_client": 0.0,
+    "server_protection_effectiveness": 1.0,
+    "client_protection_effectiveness": 1.0,
+    "overall_risk_reduction": 1.0,
+    "defense_coverage_rate": 1.0,
+    "xss_patterns_detected_raw": 371,
+    "xss_patterns_after_sanitization": 43,
+    "xss_detection_rate": 0.742,
+    "pattern_effectiveness_ratio": 0.3719676549865229,
+    "sanitization_reduction_rate": 0.8840970350404312,
+    "true_positives": 138,
+    "false_positives": 233,
+    "false_negatives": 0,
+    "true_negatives": 129,
+    "precision": 0.3719676549865229,
+    "recall": 1.0,
+    "f1_score": 0.5422396856581532,
+    "total_vectors_detected": 690,
+    "top_vectors": {
+      "script_tag": 287,
+      "on_attr_any": 184,
+      "on_attr": 144,
+      "iframe_srcdoc": 28,
+      "meta_refresh": 27
+    },
+    "aggregated_vector_counts": {
+      "script_tag": 287,
+      "on_attr": 144,
+      "javascript_href": 20,
+      "iframe_srcdoc": 28,
+      "data_src": 0,
+      "svg_onload": 0,
+      "meta_refresh": 27,
+      "on_attr_any": 184
+    },
+    "vector_categories": {
+      "no_vectors": 129,
+      "executed_with_vectors": 138,
+      "vectors_not_executed": 233
+    },
+    "potentially_executable_cases": 206,
+    "potential_execution_reasons": {
+      "script_tag": 206,
+      "iframe_srcdoc": 28,
+      "on_attr": 20,
+      "javascript_href": 1
+    },
+    "avg_model_latency_s": 34.52454444404202,
+    "execution_to_pattern_ratio": 0.3719676549865229,
+    "risk_score_baseline": 0.276,
+    "risk_score_after_defenses": 0.0,
+    "baseline_execution_percentage": 27.6,
+    "server_effectiveness_percentage": 100.0,
+    "client_effectiveness_percentage": 100.0,
+    "overall_risk_reduction_percentage": 100.0
+  }
+}
